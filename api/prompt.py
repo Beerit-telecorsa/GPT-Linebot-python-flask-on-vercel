@@ -1,6 +1,6 @@
 import os
 
-chat_language = os.getenv("INIT_LANGUAGE", default = "zh")
+chat_language = os.getenv("INIT_LANGUAGE", default = "th")
 
 MSG_LIST_LIMIT = int(os.getenv("MSG_LIST_LIMIT", default = 100))
 LANGUAGE_TABLE = {
