@@ -39,18 +39,18 @@ def handle_message(event):
     if event.message.type != "text":
         return
 
-    if event.message.text == "說話":
+    if event.message.text == "Speak":
         working_status = True
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="我可以說話囉，歡迎來跟我互動 ^_^ "))
+            TextSendMessage(text="I can talk, welcome to interact with me ^_^"))
         return
 
-    if event.message.text == "閉嘴":
+    if event.message.text == "shut up":
         working_status = False
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="好的，我乖乖閉嘴 > <，如果想要我繼續說話，請跟我說 「說話」 > <"))
+            TextSendMessage(text="Okay, I will shut up > <，if you want me to continue talking, please say "talk" > <"))
         return
 
     if working_status:
