@@ -50,7 +50,7 @@ def handle_message(event):
         working_status = False
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="Okay, I will shut up > <，if you want me to continue talking, please say "talk" > <"))
+            TextSendMessage(text="Okay, I will shut up > <，if you want me to continue talking, please say talk > <"))
         return
 
     if working_status:
